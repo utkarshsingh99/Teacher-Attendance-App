@@ -15,6 +15,10 @@ const attendanceSchema = new mongoose.Schema({
     date: {
         type: Date,
         required: true
+    },
+    present: {
+        type: Boolean,
+        required: true
     }
 })
 

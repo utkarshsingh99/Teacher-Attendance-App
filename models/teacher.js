@@ -7,6 +7,9 @@ const teacherSchema = new mongoose.Schema({
     username: {
         type: String
     },
+    password: {
+        type: String
+    },
     diary: [{
             year: {
                 type: Number
