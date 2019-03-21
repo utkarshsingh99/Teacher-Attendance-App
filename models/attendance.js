@@ -8,6 +8,10 @@ const attendanceSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    courseID: {
+        type: String,
+        required: true
+    },
     rollNumber: {
         type: String,
         required: true

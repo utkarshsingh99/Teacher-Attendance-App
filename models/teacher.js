@@ -10,20 +10,7 @@ const teacherSchema = new mongoose.Schema({
     password: {
         type: String
     },
-    diary: [{
-            year: {
-                type: Number
-            },
-            branch: {
-                type: String
-            },
-            classID: {
-                type: String
-            },
-            subject: {
-                type: String
-            }
-        }]
+    diary: [{courseID: String, classID: String}]
 })
 
 const teachers = mongoose.model('teachers', teacherSchema)

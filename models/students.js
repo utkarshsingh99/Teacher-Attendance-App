@@ -17,22 +17,9 @@ const studentSchema = new mongoose.Schema({
     branch: {
         type: String
     },
-    classes: [
-        {
-            classID: {
-                type: String
-            },
-            subject: {
-                type: String
-            },
-            teacherName: {
-                type: String
-            },
-            teacherID: {
-                type: String            // Can also make this as a 'ref'
-            }
-        }
-    ]
+    classID: {
+        type: String
+    }
 })
 
 const students = mongoose.model('students', studentSchema)
